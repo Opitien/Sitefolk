@@ -18,7 +18,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sitefolk.opitien.xyz"),
-  title: "Sitefolk — Managed Websites for Small Businesses",
+  title: "Sitefolk | Managed Websites for Small Businesses",
   description:
     "Professional websites for small businesses, built, hosted and managed for one simple monthly price.",
   keywords: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Sitefolk — Managed Websites for Small Businesses",
+    title: "Sitefolk | Managed Websites for Small Businesses",
     description:
       "Professional websites for small businesses, built, hosted and managed for one simple monthly price.",
     url: "https://sitefolk.opitien.xyz",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sitefolk — Managed Websites for Small Businesses",
+    title: "Sitefolk | Managed Websites for Small Businesses",
     description: "Professional websites for small businesses, built, hosted and managed for one simple monthly price.",
     images: ["/thumbnail.png"],
   },
