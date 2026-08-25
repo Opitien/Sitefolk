@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Sitefolk",
     images: [
       {
-        url: "/plumber_website_mockup_1787613364654.jpg",
+        url: "/thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Sitefolk - Managed Websites for Small Businesses",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sitefolk — Managed Websites for Small Businesses",
     description: "Professional websites for small businesses, built, hosted and managed for one simple monthly price.",
-    images: ["/plumber_website_mockup_1787613364654.jpg"],
+    images: ["/thumbnail.png"],
   },
 };
 
