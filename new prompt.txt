@@ -1,0 +1,31 @@
+1. The biggest missing piece: the actual conversion mechanism
+
+Right now the page repeatedly says things like:
+
+“Choose Essential →”
+
+and
+
+“Choose Pro →”
+
+but the page needs to answer:
+
+“Okay, I like this. What happens now?”
+
+Especially because you're targeting businesses from Yell.
+
+I'd make the primary CTA something like:
+
+Get Your Website →
+
+Then take them to a very short form:
+
+Business name
+Website / Yell listing
+Name
+Email
+What does your business do?
+Which plan interests you?
+Submit
+
+That's much better for cold outreach than forcing someone into a meeting.
