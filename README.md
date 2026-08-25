@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sitefolk — Managed Websites for Small Businesses
 
-## Getting Started
+A premium, editorially designed Next.js landing page for Sitefolk, a website-as-a-service business for UK small businesses.
 
-First, run the development server:
+## Overview
+Sitefolk positions itself between the hassle of DIY builders (Wix/Squarespace) and the high cost of traditional web agencies. The core promise is: "Your website. Taken care of."
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is built using:
+- **Next.js 16 (App Router)**
+- **React 19**
+- **TailwindCSS v4**
+- **TypeScript**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features & Architecture
+- **Editorial Typography:** Uses Google Fonts (`Outfit` for bold, confident headers and `Inter` for highly readable body copy).
+- **Restrained Color Palette:** Uses an off-white cream background (`#F7F7F3`), dark ink text (`#171717`), and a subtle green accent (`#6B9B4A`).
+- **Custom Components:** 
+  - `SitefolkNav` (with animated soft underlines and a full-screen mobile menu)
+  - `SitefolkHero` (featuring a realistic generated plumbing website mockup)
+  - `ProblemSection` (high-contrast without vs. with Sitefolk breakdown)
+  - `WebsiteShowcase` (highlighting local trades, professional services, and hospitality mockups)
+  - `PricingSection` (clear, uncluttered comparison of Essential and Pro plans)
+  - `FAQSection` (accessible accordion)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Setup & Local Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SEO & Metadata
+The site is configured with robust metadata via `layout.tsx`, including Open Graph images, Twitter cards, and a `metadataBase` pointing to the live domain: `https://sitefolk.opitien.xyz`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design Philosophy
+This landing page intentionally avoids the generic "SaaS template" aesthetic (no floating 3D objects, heavy gradients, or glassmorphism everywhere). Instead, it leans into a **digital studio / editorial feel** with large, confident typography, solid structural lines, and realistic visual proof of the websites Sitefolk builds.
