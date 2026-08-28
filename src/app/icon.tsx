@@ -25,11 +25,11 @@ export default function Icon() {
           borderRadius: '6px', // Slight rounding looks great on favicons
         }}
       >
-        <svg 
-          width="20" 
-          height="20" 
-          viewBox="0 0 32 32" 
-          fill="none" 
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z" stroke="#171717" strokeWidth="3" strokeLinejoin="round" />
