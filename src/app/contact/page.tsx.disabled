@@ -1,0 +1,221 @@
+import type { Metadata } from "next";
+import SitefolkNav from "@/components/SitefolkNav";
+import SitefolkFooter from "@/components/SitefolkFooter";
+
+export const metadata: Metadata = {
+  title: "Contact | Sitefolk — Let's Build Your Website",
+  description: "Book a free 15-minute audit with Sitefolk. We'll review your current site and tell you 3 ways to get more calls.",
+};
+
+export default function ContactPage() {
+  return (
+    <main className="min-h-screen overflow-x-hidden pt-16 md:pt-20">
+      <SitefolkNav />
+
+      {/* Hero */}
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-20 md:py-28">
+        <div className="max-w-2xl mb-16">
+          <p className="text-[13px] font-semibold tracking-[0.1em] text-ink-light uppercase mb-4">
+            Get in Touch
+          </p>
+          <h1 className="text-[48px] md:text-[64px] leading-[1.05] tracking-tight mb-6">
+            Let&apos;s build your website.
+          </h1>
+          <p className="text-[19px] text-ink-light leading-relaxed">
+            Book a free 15-minute audit. We&apos;ll review your current site and tell you 3 ways to get more calls.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
+
+          {/* Left: Contact Form + Book a Call */}
+          <div>
+            {/* Contact Form */}
+            <div className="mb-16">
+              <h2 className="text-[24px] font-semibold mb-8">Send us a message</h2>
+              <form className="space-y-6">
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="contact-name" className="block text-[14px] font-medium text-ink mb-2">
+                      Your Name
+                    </label>
+                    <input
+                      id="contact-name"
+                      type="text"
+                      name="name"
+                      placeholder="John Smith"
+                      className="w-full px-4 py-3 border border-border bg-white text-ink text-[16px] focus:outline-none focus:border-ink transition-colors"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="contact-email" className="block text-[14px] font-medium text-ink mb-2">
+                      Email Address
+                    </label>
+                    <input
+                      id="contact-email"
+                      type="email"
+                      name="email"
+                      placeholder="john@yourbusiness.co.uk"
+                      className="w-full px-4 py-3 border border-border bg-white text-ink text-[16px] focus:outline-none focus:border-ink transition-colors"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="contact-trade" className="block text-[14px] font-medium text-ink mb-2">
+                    Trade / Business Type
+                  </label>
+                  <input
+                    id="contact-trade"
+                    type="text"
+                    name="trade"
+                    placeholder="e.g. Plumber, Electrician, Landscaper"
+                    className="w-full px-4 py-3 border border-border bg-white text-ink text-[16px] focus:outline-none focus:border-ink transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="contact-website" className="block text-[14px] font-medium text-ink mb-2">
+                    Current Website URL <span className="text-ink-light font-normal">(if you have one)</span>
+                  </label>
+                  <input
+                    id="contact-website"
+                    type="url"
+                    name="website"
+                    placeholder="https://yourbusiness.co.uk"
+                    className="w-full px-4 py-3 border border-border bg-white text-ink text-[16px] focus:outline-none focus:border-ink transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="contact-message" className="block text-[14px] font-medium text-ink mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows={5}
+                    placeholder="Tell us a bit about your business and what you're looking for..."
+                    className="w-full px-4 py-3 border border-border bg-white text-ink text-[16px] focus:outline-none focus:border-ink transition-colors resize-none"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full py-4 bg-ink text-white font-medium text-[17px] hover:bg-ink/90 transition-colors"
+                >
+                  Send Message
+                </button>
+
+                <p className="text-[14px] text-ink-light text-center">
+                  We reply within 1 business day.
+                </p>
+              </form>
+            </div>
+
+            {/* Book a Call */}
+            <div>
+              <h2 className="text-[24px] font-semibold mb-4">Book a call</h2>
+              <p className="text-[17px] text-ink-light leading-relaxed mb-6">
+                Prefer to talk? Book a free 15-minute call and we&apos;ll walk you through how Sitefolk works.
+              </p>
+              {/* Calendly embed placeholder */}
+              <div className="border border-border bg-cream-dark p-8 text-center">
+                <p className="text-[15px] text-ink-light mb-4">Calendly scheduling widget will appear here.</p>
+                <a
+                  href="https://calendly.com/opitiene/site-folk-quote-cal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-ink text-white font-medium text-[16px] hover:bg-ink/90 transition-colors"
+                >
+                  Book a Free Call →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Contact Info + Map */}
+          <div>
+            {/* Contact Details */}
+            <div className="mb-12">
+              <h2 className="text-[24px] font-semibold mb-8">Contact details</h2>
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-1">Email</p>
+                    <a href="mailto:you@sitefolk.uk" className="text-[17px] text-ink-light hover:text-ink transition-colors">
+                      you@sitefolk.uk
+                    </a>
+                    <p className="text-[14px] text-ink-light mt-1">Reply within 1 business day</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-1">Phone</p>
+                    <a href="tel:020XXXXXXXX" className="text-[17px] text-ink-light hover:text-ink transition-colors">
+                      020 XXXX XXXX
+                    </a>
+                    <p className="text-[14px] text-ink-light mt-1">Mon–Fri, 9am–5pm GMT</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-1">Address</p>
+                    <address className="text-[17px] text-ink-light not-italic leading-relaxed">
+                      Sitefolk Ltd<br />
+                      71–75 Shelton Street<br />
+                      Covent Garden<br />
+                      London, WC2H 9JQ<br />
+                      United Kingdom
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Google Map */}
+            <div>
+              <h2 className="text-[24px] font-semibold mb-4">Find us</h2>
+              <div className="border border-border overflow-hidden">
+                <iframe
+                  title="Sitefolk London Office Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.090540063088!2d-0.12554962312774628!3d51.51549907181484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cb5e0f09c1%3A0x13c2fd6db3a9e5d0!2s71-75%20Shelton%20St%2C%20London%20WC2H%209JQ!5e0!3m2!1sen!2suk!4v1725977000000!5m2!1sen!2suk"
+                  width="100%"
+                  height="320"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <SitefolkFooter />
+    </main>
+  );
+}

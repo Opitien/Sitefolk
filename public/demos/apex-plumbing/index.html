@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Plumbing &amp; Heating | Manchester Plumber</title>
+    <meta name="description"
+        content="Reliable plumbing and heating services across Manchester and Greater Manchester. Free quotes and professional local service.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/demos/apex-plumbing/styles.css">
+</head>
+<!--
+  ============================================================
+  APEX PLUMBING — Demo Website
+  A fictional demo by SiteFolk. Not a real business.
+  ============================================================
+
+  IMAGE SOURCES (centralised for easy replacement)
+  All images sourced from Unsplash. Replace the URLs below
+  and the corresponding src/style attributes in the HTML
+  to swap imagery.
+
+  HERO_IMG        — Professional tradesperson at work
+  ABOUT_IMG       — Plumber / engineer working
+  GALLERY_1       — Modern bathroom interior
+  GALLERY_2       — Contemporary bathroom
+  GALLERY_3       — Boiler / heating system
+  GALLERY_4       — Kitchen plumbing / sink area
+  GALLERY_5       — Finished bathroom project
+  GALLERY_6       — Pipework / radiator installation
+  ============================================================
+-->
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="apex-header" id="apex-header">
+        <div class="apex-container apex-header__inner">
+            <a href="/demos/apex-plumbing" class="apex-logo" aria-label="Apex Plumbing &amp; Heating — Home">
+                <span class="apex-logo__name">APEX</span>
+                <span class="apex-logo__tagline">PLUMBING &amp; HEATING</span>
+            </a>
+
+            <nav class="apex-nav" id="apex-nav" aria-label="Main navigation">
+                <ul class="apex-nav__list">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#areas">Areas We Cover</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="apex-header__actions">
+                <a href="tel:01615550182" class="apex-header__phone" aria-label="Call us on 0161 555 0182">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>0161 555 0182</span>
+                </a>
+                <a href="#contact" class="apex-btn apex-btn--primary apex-header__cta">Request a Quote</a>
+            </div>
+
+            <button class="apex-hamburger" id="apex-hamburger" type="button" aria-label="Open menu"
+                aria-expanded="false" aria-controls="apex-nav">
+                <span class="apex-hamburger__line"></span>
+                <span class="apex-hamburger__line"></span>
+                <span class="apex-hamburger__line"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+        <section class="apex-hero" id="hero">
+            <div class="apex-container apex-hero__inner">
+                <div class="apex-hero__content">
+                    <p class="apex-eyebrow">Plumbing &amp; Heating · Manchester</p>
+                    <h1>Plumbing problems?<br>We'll sort it.</h1>
+                    <p class="apex-hero__desc">Reliable plumbing and heating services for homes and businesses across
+                        Manchester and Greater Manchester.</p>
+                    <div class="apex-hero__ctas">
+                        <a href="#contact" class="apex-btn apex-btn--primary apex-btn--lg">Request a Free Quote</a>
+                        <a href="tel:01615550182" class="apex-btn apex-btn--outline-light apex-btn--lg">Call 0161 555
+                            0182</a>
+                    </div>
+                    <ul class="apex-hero__trust" aria-label="Why choose us">
+                        <li>✓ Fully insured</li>
+                        <li>✓ Free quotations</li>
+                        <li>✓ Local &amp; reliable</li>
+                    </ul>
+                </div>
+                <div class="apex-hero__media">
+                    <!-- HERO_IMG -->
+                    <img src="https://i.pinimg.com/736x/4d/43/28/4d43288877840847788c0da90518fbc9.jpg"
+                        alt="Professional plumber carrying tools in a UK home" width="900" height="1100" loading="eager"
+                        class="apex-hero__img">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== TRUST BAR ==================== -->
+        <section class="apex-trust" aria-label="Company credentials">
+            <div class="apex-container">
+                <div class="apex-trust__grid">
+                    <div class="apex-trust__item">
+                        <strong class="apex-trust__value">4.9/5</strong>
+                        <span class="apex-trust__label">Customer rating</span>
+                    </div>
+                    <div class="apex-trust__item">
+                        <strong class="apex-trust__value">10+ years</strong>
+                        <span class="apex-trust__label">Local experience</span>
+                    </div>
+                    <div class="apex-trust__item">
+                        <strong class="apex-trust__value">500+</strong>
+                        <span class="apex-trust__label">Jobs completed</span>
+                    </div>
+                    <div class="apex-trust__item">
+                        <strong class="apex-trust__value">Fully insured</strong>
+                        <span class="apex-trust__label">For your peace of mind</span>
+                    </div>
+                </div>
+                <p class="apex-trust__note">Demo statistics for illustration purposes.</p>
+            </div>
+        </section>
+
+
+        <!-- ==================== SERVICES ==================== -->
+        <section class="apex-services" id="services">
+            <div class="apex-container">
+                <div class="apex-section-header">
+                    <h2>Plumbing services you can rely on</h2>
+                    <p>From everyday repairs to urgent plumbing problems, Apex provides straightforward, professional
+                        service.</p>
+                </div>
+                <div class="apex-services__grid">
+
+                    <article class="apex-service-card">
+                        <div class="apex-service-card__icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                            </svg>
+                        </div>
+                        <h3>Emergency Plumbing</h3>
+                        <p>Leaks, burst pipes, blocked drains and urgent plumbing problems.</p>
+                    </article>
+
+                    <article class="apex-service-card">
+                        <div class="apex-service-card__icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22c-4.97 0-9-2.69-9-6v-4l9-8 9 8v4c0 3.31-4.03 6-9 6z" />
+                                <path d="M12 6v6" />
+                                <circle cx="12" cy="16" r="1" />
+                            </svg>
+                        </div>
+                        <h3>Boiler &amp; Heating</h3>
+                        <p>Boiler servicing, heating repairs and radiator problems.</p>
+                    </article>
+
+                    <article class="apex-service-card">
+                        <div class="apex-service-card__icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 22V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v18H4z" />
+                                <path d="M9 22v-6h6v6" />
+                                <path d="M9 10h.01" />
+                                <path d="M15 10h.01" />
+                            </svg>
+                        </div>
+                        <h3>Bathroom Plumbing</h3>
+                        <p>Taps, toilets, showers, sinks and bathroom plumbing.</p>
+                    </article>
+
+                    <article class="apex-service-card">
+                        <div class="apex-service-card__icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                        </div>
+                        <h3>General Plumbing</h3>
+                        <p>Repairs, replacements and maintenance for homes and businesses.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== EMERGENCY ==================== -->
+        <section class="apex-emergency">
+            <div class="apex-container apex-emergency__inner">
+                <div class="apex-emergency__icon" aria-hidden="true">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="8" x2="12" y2="12" />
+                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                </div>
+                <div class="apex-emergency__text">
+                    <h2>Got a plumbing emergency?</h2>
+                    <p>Leaks and burst pipes can't wait. Call Apex Plumbing and we'll help you get the problem under
+                        control.</p>
+                </div>
+                <a href="tel:01615550182" class="apex-btn apex-btn--primary apex-btn--lg">Call 0161 555 0182</a>
+            </div>
+        </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+        <section class="apex-about" id="about">
+            <div class="apex-container apex-about__inner">
+                <div class="apex-about__media">
+                    <!-- ABOUT_IMG -->
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&h=960&q=80"
+                        alt="Experienced plumber inspecting pipework in a UK property" width="800" height="960"
+                        loading="lazy" class="apex-about__img">
+                </div>
+                <div class="apex-about__content">
+                    <p class="apex-eyebrow">Why Apex</p>
+                    <h2>A local plumber who turns up and gets the job done.</h2>
+                    <p class="apex-about__desc">We're a Manchester-based plumbing and heating team focused on
+                        straightforward service, quality workmanship and treating your home with respect.</p>
+
+                    <div class="apex-benefits">
+                        <div class="apex-benefit">
+                            <h3>Clear pricing</h3>
+                            <p>No confusing jargon or unnecessary surprises.</p>
+                        </div>
+                        <div class="apex-benefit">
+                            <h3>Local &amp; dependable</h3>
+                            <p>Serving Manchester and surrounding areas.</p>
+                        </div>
+                        <div class="apex-benefit">
+                            <h3>Qualified professionals</h3>
+                            <p>Experienced and fully insured.</p>
+                        </div>
+                        <div class="apex-benefit">
+                            <h3>Respect for your home</h3>
+                            <p>We keep the workspace clean and tidy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== RECENT WORK ==================== -->
+        <section class="apex-gallery" id="work">
+            <div class="apex-container">
+                <div class="apex-section-header">
+                    <h2>Recent work</h2>
+                    <p>A look at some of the plumbing and heating work we've completed for local customers.</p>
+                </div>
+                <div class="apex-gallery__grid">
+                    <!-- GALLERY_1 -->
+                    <figure class="apex-gallery__item">
+                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&h=450&q=80"
+                            alt="Modern bathroom installation with walk-in shower" width="600" height="450"
+                            loading="lazy">
+                        <figcaption>Modern bathroom</figcaption>
+                    </figure>
+                    <!-- GALLERY_2 -->
+                    <figure class="apex-gallery__item">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&h=450&q=80"
+                            alt="Contemporary bathroom with new fixtures and fittings" width="600" height="450"
+                            loading="lazy">
+                        <figcaption>Bathroom refurbishment</figcaption>
+                    </figure>
+                    <!-- GALLERY_3 -->
+                    <figure class="apex-gallery__item">
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=600&h=450&q=80"
+                            alt="Boiler installation in a UK property" width="600" height="450" loading="lazy">
+                        <figcaption>Boiler installation</figcaption>
+                    </figure>
+                    <!-- GALLERY_4 -->
+                    <figure class="apex-gallery__item">
+                        <img src="https://i.pinimg.com/1200x/07/ed/fe/07edfec270843059fb5fe26cd4c34916.jpg"
+                            alt="Kitchen sink and tap replacement" width="600" height="450" loading="lazy">
+                        <figcaption>Kitchen plumbing</figcaption>
+                    </figure>
+                    <!-- GALLERY_5 -->
+                    <figure class="apex-gallery__item">
+                        <img src="https://i.pinimg.com/736x/d0/54/4b/d0544ba3e5415482c88c9c8ca444b1b7.jpg"
+                            alt="New radiator fitted in a living room" width="600" height="450" loading="lazy">
+                        <figcaption>Radiator installation</figcaption>
+                    </figure>
+                    <!-- GALLERY_6 -->
+                    <figure class="apex-gallery__item">
+                        <img src="https://i.pinimg.com/1200x/10/e8/a1/10e8a17362a926329879a767cac18477.jpg"
+                            alt="Professional pipework and plumbing repair" width="600" height="450" loading="lazy">
+                        <figcaption>Pipework</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== REVIEWS ==================== -->
+        <section class="apex-reviews" id="reviews">
+            <div class="apex-container">
+                <div class="apex-section-header">
+                    <h2>Trusted by local customers</h2>
+                </div>
+                <div class="apex-reviews__grid">
+
+                    <blockquote class="apex-review">
+                        <div class="apex-review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="apex-review__text">"Called Apex after a leak started under our kitchen sink. They
+                            arrived the same day, explained everything clearly and had it sorted quickly."</p>
+                        <footer class="apex-review__author">
+                            <strong>Sarah M.</strong> — Didsbury
+                        </footer>
+                    </blockquote>
+
+                    <blockquote class="apex-review">
+                        <div class="apex-review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="apex-review__text">"Really professional from start to finish. The boiler issue was
+                            diagnosed quickly and the price was exactly what we were quoted."</p>
+                        <footer class="apex-review__author">
+                            <strong>James R.</strong> — Chorlton
+                        </footer>
+                    </blockquote>
+
+                    <blockquote class="apex-review">
+                        <div class="apex-review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="apex-review__text">"Excellent service. Turned up when they said they would and left
+                            everything spotless. Would definitely recommend."</p>
+                        <footer class="apex-review__author">
+                            <strong>Emma T.</strong> — Sale
+                        </footer>
+                    </blockquote>
+
+                </div>
+                <p class="apex-reviews__note">Fictional demo testimonials for illustration purposes.</p>
+            </div>
+        </section>
+
+
+        <!-- ==================== AREAS WE COVER ==================== -->
+        <section class="apex-areas" id="areas">
+            <div class="apex-container">
+                <div class="apex-section-header">
+                    <h2>Serving Manchester &amp; Greater Manchester</h2>
+                    <p>Based in Manchester and serving homes and businesses across the surrounding area.</p>
+                </div>
+                <ul class="apex-areas__list" aria-label="Areas we cover">
+                    <li class="apex-areas__tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Manchester
+                    </li>
+                    <li class="apex-areas__tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Salford
+                    </li>
+                    <li class="apex-areas__tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Didsbury
+                    </li>
+                    <li class="apex-areas__tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Chorlton
+                    </li>
+                    <li class="apex-areas__tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Sale
+                    </li>
+                    <li class="apex-areas__tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Altrincham
+                    </li>
+                    <li class="apex-areas__tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Stockport
+                    </li>
+                    <li class="apex-areas__tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Trafford
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ==================== FAQ ==================== -->
+        <section class="apex-faq" id="faq">
+            <div class="apex-container">
+                <div class="apex-section-header">
+                    <h2>Frequently asked questions</h2>
+                </div>
+                <div class="apex-faq__list">
+
+                    <details class="apex-faq__item">
+                        <summary>Do you provide emergency plumbing?</summary>
+                        <div class="apex-faq__answer">
+                            <p>Yes. We handle emergency call-outs for leaks, burst pipes, blocked drains and other
+                                urgent plumbing problems. Call us on <a href="tel:01615550182">0161 555 0182</a> and
+                                we'll do our best to attend as quickly as possible.</p>
+                        </div>
+                    </details>
+
+                    <details class="apex-faq__item">
+                        <summary>How quickly can you attend?</summary>
+                        <div class="apex-faq__answer">
+                            <p>For emergencies, we aim to respond the same day wherever possible. For general bookings,
+                                we'll arrange a time that suits you, usually within a few working days.</p>
+                        </div>
+                    </details>
+
+                    <details class="apex-faq__item">
+                        <summary>Do you provide free quotes?</summary>
+                        <div class="apex-faq__answer">
+                            <p>Yes. We're happy to provide a free, no-obligation quote for any plumbing or heating work.
+                                Get in touch using the form below or give us a call.</p>
+                        </div>
+                    </details>
+
+                    <details class="apex-faq__item">
+                        <summary>Are you fully insured?</summary>
+                        <div class="apex-faq__answer">
+                            <p>Yes. We carry full public liability insurance for your peace of mind. We're also happy to
+                                provide documentation on request.</p>
+                        </div>
+                    </details>
+
+                    <details class="apex-faq__item">
+                        <summary>Which areas do you cover?</summary>
+                        <div class="apex-faq__answer">
+                            <p>We're based in Manchester and cover the wider Greater Manchester area including Salford,
+                                Didsbury, Chorlton, Sale, Altrincham, Stockport and Trafford.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== CONTACT / FINAL CTA ==================== -->
+        <section class="apex-contact" id="contact">
+            <div class="apex-container apex-contact__inner">
+                <div class="apex-contact__info">
+                    <h2>Need a plumber?<br>Let's get it sorted.</h2>
+                    <p class="apex-contact__desc">Tell us what you need and we'll get back to you with a straightforward
+                        quote.</p>
+
+                    <div class="apex-contact__details">
+                        <div class="apex-contact__detail">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:01615550182">0161 555 0182</a>
+                        </div>
+                        <div class="apex-contact__detail">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <a href="mailto:hello@apexplumbing.example">hello@apexplumbing.example</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="apex-form" id="apex-form" action="#" method="POST" novalidate>
+                    <div class="apex-form__group">
+                        <label for="apex-name">Name</label>
+                        <input type="text" id="apex-name" name="name" autocomplete="name" required
+                            placeholder="Your name">
+                    </div>
+                    <div class="apex-form__group">
+                        <label for="apex-email">Email</label>
+                        <input type="email" id="apex-email" name="email" autocomplete="email" required
+                            placeholder="you@example.co.uk">
+                    </div>
+                    <div class="apex-form__group">
+                        <label for="apex-phone">Phone</label>
+                        <input type="tel" id="apex-phone" name="phone" autocomplete="tel" placeholder="07xxx xxx xxx">
+                    </div>
+                    <div class="apex-form__group">
+                        <label for="apex-message">What do you need help with?</label>
+                        <textarea id="apex-message" name="message" rows="4"
+                            placeholder="Briefly describe the problem or the work you need done."></textarea>
+                    </div>
+                    <button type="submit" class="apex-btn apex-btn--primary apex-btn--lg apex-form__submit">Request a
+                        Quote</button>
+                    <p class="apex-form__note">This is a demo form. No data is sent or stored.</p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="apex-footer">
+        <div class="apex-container apex-footer__inner">
+
+            <div class="apex-footer__brand">
+                <div class="apex-logo apex-logo--footer">
+                    <span class="apex-logo__name">APEX</span>
+                    <span class="apex-logo__tagline">PLUMBING &amp; HEATING</span>
+                </div>
+                <p class="apex-footer__location">Manchester &amp; Greater Manchester</p>
+                <p class="apex-footer__phone"><a href="tel:01615550182">0161 555 0182</a></p>
+                <p class="apex-footer__email"><a href="mailto:hello@apexplumbing.example">hello@apexplumbing.example</a>
+                </p>
+            </div>
+
+            <div class="apex-footer__hours">
+                <h3>Opening hours</h3>
+                <dl>
+                    <div>
+                        <dt>Mon–Fri</dt>
+                        <dd>8am–6pm</dd>
+                    </div>
+                    <div>
+                        <dt>Sat</dt>
+                        <dd>9am–2pm</dd>
+                    </div>
+                </dl>
+                <p class="apex-footer__emergency-note">Emergency call-outs available</p>
+            </div>
+
+            <nav class="apex-footer__nav" aria-label="Footer navigation">
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#areas">Areas</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="apex-footer__bottom">
+            <div class="apex-container apex-footer__bottom-inner">
+                <p>&copy; 2025 Apex Plumbing &amp; Heating. This is a fictional demo website.</p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p class="apex-footer__credit">Website by <a href="/" target="_blank" rel="noopener">SiteFolk</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==================== MOBILE STICKY CTA ==================== -->
+    <div class="apex-mobile-bar" id="apex-mobile-bar" aria-label="Quick actions">
+        <a href="tel:01615550182" class="apex-mobile-bar__btn apex-mobile-bar__btn--call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Call Apex
+        </a>
+        <a href="#contact" class="apex-mobile-bar__btn apex-mobile-bar__btn--quote">Get a Quote</a>
+    </div>
+
+
+    <script src="/demos/apex-plumbing/script.js"></script>
+</body>
+
+</html>

@@ -23,10 +23,10 @@ export default function SitefolkFooter() {
             {/* Site links */}
             <div className="flex flex-col gap-3">
               {[
-                { href: "#process", label: "How it works" },
-                { href: "#services", label: "What's included" },
-                { href: "#pricing", label: "Pricing" },
-                { href: "#faq", label: "FAQ" },
+                { href: "/#process", label: "Our Approach" },
+                { href: "/#services", label: "Capabilities" },
+                { href: "/#pricing", label: "Investment" },
+                { href: "/#faq", label: "Answers" },
               ].map((link) => (
                 <a key={link.href} href={link.href} className="text-[16px] text-ink font-medium relative group py-0.5 w-fit whitespace-nowrap">
                   {link.label}
@@ -37,14 +37,14 @@ export default function SitefolkFooter() {
             {/* Legal links */}
             <div className="flex flex-col gap-3">
               {[
-                { href: "#", label: "Privacy Policy" },
-                { href: "#", label: "Terms" },
-                { href: "https://calendly.com/opitiene/site-folk-quote-cal", label: "Contact Us", external: true },
+                { href: "/privacy-policy", label: "Privacy Policy" },
+                { href: "/terms", label: "Terms of Service" },
+                { href: "/cookies", label: "Cookie Policy" },
+                { href: "/contact", label: "Contact Us" },
               ].map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="text-[16px] text-ink font-medium relative group py-0.5 w-fit whitespace-nowrap"
                 >
                   {link.label}

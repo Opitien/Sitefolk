@@ -6,7 +6,7 @@ type Plan = "Essential" | "Pro";
 
 interface FormState {
   businessName: string;
-  websiteOrYell: string;
+  website: string;
   name: string;
   email: string;
   whatYouDo: string;
@@ -24,7 +24,7 @@ function QuoteForm({
 }) {
   const [form, setForm] = useState<FormState>({
     businessName: "",
-    websiteOrYell: "",
+    website: "",
     name: "",
     email: "",
     whatYouDo: "",
@@ -34,8 +34,8 @@ function QuoteForm({
   const [loading, setLoading] = useState(false);
 
   const inputBase = `w-full px-4 py-3 text-[15px] border rounded-none outline-none transition-colors duration-200 ${dark
-      ? "bg-white/10 border-white/20 text-white placeholder:text-white/40 focus:border-white/60"
-      : "bg-white border-border text-ink placeholder:text-ink/40 focus:border-ink"
+    ? "bg-white/10 border-white/20 text-white placeholder:text-white/40 focus:border-white/60"
+    : "bg-white border-border text-ink placeholder:text-ink/40 focus:border-ink"
     }`;
 
   const labelBase = `block text-[12px] font-semibold uppercase tracking-wider mb-2 ${dark ? "text-white/60" : "text-ink/60"
@@ -116,12 +116,12 @@ function QuoteForm({
       </div>
 
       <div>
-        <label className={labelBase}>Website or Yell listing</label>
+        <label className={labelBase}>Website</label>
         <input
           className={inputBase}
-          placeholder="e.g. yell.com/... or yourdomain.co.uk"
-          value={form.websiteOrYell}
-          onChange={(e) => setForm({ ...form, websiteOrYell: e.target.value })}
+          placeholder="e.g. yourdomain.co.uk"
+          value={form.website}
+          onChange={(e) => setForm({ ...form, website: e.target.value })}
         />
       </div>
 
@@ -165,8 +165,8 @@ function QuoteForm({
         type="submit"
         disabled={loading}
         className={`w-full py-4 text-[16px] font-medium transition-all duration-200 ${dark
-            ? "bg-white text-ink hover:bg-cream-dark disabled:opacity-50"
-            : "bg-ink text-white hover:bg-ink/80 disabled:opacity-50"
+          ? "bg-white text-ink hover:bg-cream-dark disabled:opacity-50"
+          : "bg-ink text-white hover:bg-ink/80 disabled:opacity-50"
           }`}
       >
         {loading ? "Sending…" : "Send my details →"}
@@ -204,8 +204,8 @@ export default function PricingSection() {
             {/* Form overlay */}
             <div
               className={`absolute inset-4 bg-cream z-10 transition-all duration-500 ease-in-out flex flex-col justify-center ${openForm === "Essential"
-                  ? "opacity-100 translate-y-0 pointer-events-auto"
-                  : "opacity-0 translate-y-4 pointer-events-none"
+                ? "opacity-100 translate-y-0 pointer-events-auto"
+                : "opacity-0 translate-y-4 pointer-events-none"
                 }`}
             >
               <QuoteForm plan="Essential" dark={false} onClose={() => setOpenForm(null)} />
@@ -213,20 +213,20 @@ export default function PricingSection() {
 
             <div className="p-10 md:p-14">
               <h3 className="text-[24px] font-outfit font-medium mb-2 text-ink">ESSENTIAL</h3>
-              <p className="text-[15px] text-ink-light mb-12">£249 setup</p>
+              <p className="text-[15px] text-ink-light mb-12">£600 setup</p>
 
               <div className="mb-12">
-                <span className="text-[64px] font-outfit font-medium tracking-tight text-ink">£69</span>
+                <span className="text-[64px] font-outfit font-medium tracking-tight text-ink">£150</span>
                 <span className="text-[19px] text-ink-light">/month</span>
               </div>
 
               <p className="text-[17px] text-ink mb-10 pb-10 border-b border-border leading-relaxed">
-                For small businesses that need a professional website without the technical hassle.
+                Best for: Local service businesses getting started without the technical hassle.
               </p>
 
               <ul className="space-y-5 text-[17px] text-ink mb-12">
-                {["5 pages", "Hosting & SSL", "Maintenance", "1 hour content updates/month", "Basic SEO", "Analytics", "Lead/contact forms"].map((f) => (
-                  <li key={f} className="flex gap-3"><span className="text-accent">✓</span>{f}</li>
+                {["5-page Website - Mobile + Fast", "Booking/Contact Form + Call Now Button", "Hosting, Security, Backups, Updates", "Google Business Profile Setup", "5 Content Updates/month", "Cancel Anytime"].map((f) => (
+                  < li key={f} className="flex gap-3" > <span className="text-accent">✓</span>{f}</li>
                 ))}
               </ul>
             </div>
@@ -250,8 +250,8 @@ export default function PricingSection() {
             {/* Form overlay */}
             <div
               className={`absolute inset-4 bg-ink z-10 transition-all duration-500 ease-in-out flex flex-col justify-center ${openForm === "Pro"
-                  ? "opacity-100 translate-y-0 pointer-events-auto"
-                  : "opacity-0 translate-y-4 pointer-events-none"
+                ? "opacity-100 translate-y-0 pointer-events-auto"
+                : "opacity-0 translate-y-4 pointer-events-none"
                 }`}
             >
               <QuoteForm plan="Pro" dark={true} onClose={() => setOpenForm(null)} />
@@ -259,19 +259,19 @@ export default function PricingSection() {
 
             <div className="p-10 md:p-14">
               <h3 className="text-[24px] font-outfit font-medium mb-2 text-white">PRO</h3>
-              <p className="text-[15px] text-ink-light mb-12">£499 setup</p>
+              <p className="text-[15px] text-ink-light mb-12">£1000 setup</p>
 
               <div className="mb-12">
-                <span className="text-[64px] font-outfit font-medium tracking-tight text-white">£129</span>
+                <span className="text-[64px] font-outfit font-medium tracking-tight text-white">£300</span>
                 <span className="text-[19px] text-ink-light">/month</span>
               </div>
 
               <p className="text-[17px] text-white mb-10 pb-10 border-b border-ink-light/30 leading-relaxed">
-                For businesses that need more room to grow.
+                Best for: Businesses that want more customers.
               </p>
 
               <ul className="space-y-5 text-[17px] text-white mb-12">
-                {["10 pages", "Hosting & SSL", "Maintenance", "3 hours content updates/month", "Basic SEO", "Analytics", "Lead/contact forms", "Blog/CMS", "Priority support"].map((f) => (
+                {["Everthing in Essential", "Google Ads management included", "Google Reviews Widget", "Monthly Report: Traffic, Leads, Rankings", "10 Updates/month + 1 Blog Post", "Priority support - 24hr fixes"].map((f) => (
                   <li key={f} className="flex gap-3"><span className="text-accent">✓</span>{f}</li>
                 ))}
               </ul>
@@ -290,6 +290,6 @@ export default function PricingSection() {
         </div>
 
       </div>
-    </section>
+    </section >
   );
 }

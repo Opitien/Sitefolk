@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
+import CookieBanner from "@/components/CookieBanner";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -18,24 +19,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sitefolk.opitien.xyz"),
-  title: "Sitefolk | Managed Websites for Small Businesses",
+  title: "Sitefolk | Websites & Google Ads for UK Trades",
   description:
-    "Professional websites for small businesses, built, hosted and managed for one simple monthly price.",
+    "Bespoke web design and Google Ads campaigns that generate real enquiries for your trade business. Built, hosted, and managed for one simple monthly price.",
   keywords: [
-    "managed websites",
-    "small business websites",
-    "website as a service",
-    "UK web design",
-    "website maintenance",
-    "local business web design",
+    "UK trades web design",
+    "Google Ads for tradesmen",
+    "plumber websites",
+    "electrician websites",
+    "trade business marketing",
+    "Sitefolk",
   ],
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   openGraph: {
-    title: "Sitefolk | Managed Websites for Small Businesses",
+    title: "Sitefolk | Websites & Google Ads for UK Trades",
     description:
-      "Professional websites for small businesses, built, hosted and managed for one simple monthly price.",
+      "Bespoke web design and Google Ads campaigns that generate real enquiries for your trade business. Built, hosted, and managed for one simple monthly price.",
     url: "https://sitefolk.opitien.xyz",
     siteName: "Sitefolk",
     images: [
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
         url: "/thumbnail.png",
         width: 1200,
         height: 630,
-        alt: "Sitefolk - Managed Websites for Small Businesses",
+        alt: "Sitefolk - Websites & Google Ads for UK Trades",
       },
     ],
     type: "website",
@@ -51,8 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sitefolk | Managed Websites for Small Businesses",
-    description: "Professional websites for small businesses, built, hosted and managed for one simple monthly price.",
+    title: "Sitefolk | Websites & Google Ads for UK Trades",
+    description:
+      "Bespoke web design and Google Ads campaigns that generate real enquiries for your trade business. Built, hosted, and managed for one simple monthly price.",
     images: ["/thumbnail.png"],
   },
 };
@@ -60,7 +62,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   );
 }

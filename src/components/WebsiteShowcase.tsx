@@ -24,6 +24,35 @@ function ShowcaseItem({ showcase }: { showcase: any }) {
     return () => observer.disconnect();
   }, []);
 
+  const mockupContent = (
+    <>
+      <div className="bg-white px-4 py-3 flex items-center gap-2 border-b border-border relative z-20">
+        <div className="flex gap-1.5">
+          <div className="w-3 h-3 rounded-full bg-[#E2E2DC]"></div>
+          <div className="w-3 h-3 rounded-full bg-[#E2E2DC]"></div>
+          <div className="w-3 h-3 rounded-full bg-[#E2E2DC]"></div>
+        </div>
+        <div className="mx-auto bg-cream rounded-md px-4 py-1 flex-1 max-w-md text-center text-[12px] text-ink-light font-medium">
+          {showcase.domain}
+        </div>
+      </div>
+
+      <div className="relative w-full aspect-[4/3] md:aspect-[16/9] bg-cream z-10">
+        <Image
+          src={showcase.image}
+          alt={`Example website for ${showcase.title}`}
+          fill
+          className="object-cover object-top"
+        />
+        {showcase.demoUrl && (
+          <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/10 transition-colors z-30 flex items-center justify-center">
+            <span className="opacity-0 group-hover:opacity-100 bg-white text-ink px-6 py-3 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Demo</span>
+          </div>
+        )}
+      </div>
+    </>
+  );
+
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-border pb-6">
@@ -42,32 +71,28 @@ function ShowcaseItem({ showcase }: { showcase: any }) {
       </div>
 
       {/* Browser mockup wrapper */}
-      <div 
-        ref={itemRef}
-        className={`bg-cream-dark rounded-xl shadow-xl border border-border/50 overflow-hidden ${
-          isVisible ? "animate-elegant-reveal" : "opacity-0"
-        }`}
-      >
-        <div className="bg-white px-4 py-3 flex items-center gap-2 border-b border-border">
-          <div className="flex gap-1.5">
-            <div className="w-3 h-3 rounded-full bg-[#E2E2DC]"></div>
-            <div className="w-3 h-3 rounded-full bg-[#E2E2DC]"></div>
-            <div className="w-3 h-3 rounded-full bg-[#E2E2DC]"></div>
+      {showcase.demoUrl ? (
+        <a
+          href={showcase.demoUrl}
+          className="block group"
+        >
+          <div
+            ref={itemRef as any}
+            className={`bg-cream-dark rounded-xl shadow-xl border border-border/50 overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:border-accent/30 group-hover:-translate-y-1 ${isVisible ? "animate-elegant-reveal" : "opacity-0"
+              }`}
+          >
+            {mockupContent}
           </div>
-          <div className="mx-auto bg-cream rounded-md px-4 py-1 flex-1 max-w-md text-center text-[12px] text-ink-light font-medium">
-            {showcase.domain}
-          </div>
+        </a>
+      ) : (
+        <div
+          ref={itemRef}
+          className={`bg-cream-dark rounded-xl shadow-xl border border-border/50 overflow-hidden ${isVisible ? "animate-elegant-reveal" : "opacity-0"
+            }`}
+        >
+          {mockupContent}
         </div>
-        
-        <div className="relative w-full aspect-[4/3] md:aspect-[16/9] bg-cream">
-          <Image 
-            src={showcase.image} 
-            alt={`Example website for ${showcase.title}`}
-            fill
-            className="object-cover object-top"
-          />
-        </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -77,33 +102,36 @@ export default function WebsiteShowcase() {
     {
       id: "01",
       category: "LOCAL SERVICES",
-      title: "Trades / plumbing / construction business.",
+      title: "Trades / local services / conversion.",
       goal: "Generate quote requests.",
-      image: "/plumber_website_mockup_1787613364654.jpg",
+      image: "/apex_demo.jpg",
       domain: "apexplumbing.co.uk",
+      demoUrl: "/demos/apex-plumbing",
     },
     {
       id: "02",
       category: "PROFESSIONAL SERVICES",
-      title: "Accountant / consultant / local professional.",
+      title: "Professional services / corporate / trust.",
       goal: "Generate enquiries.",
-      image: "/accountant_website_mockup_1787613517206.jpg",
-      domain: "oakwoodandco.co.uk",
+      image: "/north_demo.jpg",
+      domain: "northfieldadvisory.co.uk",
+      demoUrl: "/demos/northfield-advisory",
     },
     {
       id: "03",
-      category: "HOSPITALITY / LOCAL",
-      title: "Salon / café / restaurant.",
+      category: "VISUAL & PREMIUM BRANDS",
+      title: "Fashion / luxury / real estate / visual brands.",
       goal: "Bookings or enquiries.",
-      image: "/cafe_website_mockup_1787613526694.jpg",
-      domain: "oakandgrain.co.uk",
+      image: "/ateliernoir_demo.jpg",
+      domain: "ateliernoir.co.uk",
+      demoUrl: "/demos/atelier-noir",
     },
   ];
 
   return (
     <section className="py-32 bg-white">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
-        
+
         <div className="mb-20 text-center max-w-3xl mx-auto">
           <h2 className="text-[48px] md:text-[64px] leading-[1.05] tracking-tight mb-6">
             Not a template.<br />

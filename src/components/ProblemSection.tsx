@@ -9,11 +9,13 @@ export default function ProblemSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
           setIsVisible(true);
+        } else if (!entry.isIntersecting) {
+          setIsVisible(false);
         }
       },
-      { threshold: 0.3 }
+      { threshold: [0, 0.3] }
     );
 
     if (sectionRef.current) {
@@ -40,7 +42,7 @@ export default function ProblemSection() {
             Your website shouldn&apos;t become another job.
           </h2>
           <p className="text-[19px] text-ink-light leading-relaxed">
-            Most small businesses don&apos;t need another platform to manage. They need a website that works &mdash; and someone to deal with the technical stuff.
+            Most small businesses don&apos;t need another platform to manage. They need a website that works and someone to deal with the technical stuff.
           </p>
         </div>
 
@@ -54,19 +56,18 @@ export default function ProblemSection() {
               <ul className="space-y-4 text-[24px] flex flex-col">
                 {badItems.map((item, i) => (
                   <li key={item} className="w-fit">
-                    <span 
-                      className={`relative transition-colors duration-500 ease-in-out ${
-                        isVisible ? "text-ink/40" : "text-ink"
-                      }`}
+                    <span
+                      className={`relative transition-colors duration-500 ease-in-out ${isVisible ? "text-ink/40" : "text-ink"
+                        }`}
                       style={{ transitionDelay: `${i * 150}ms` }}
                     >
                       {item}
                       {/* Animated strikethrough line */}
-                      <span 
+                      <span
                         className="absolute left-0 top-1/2 -translate-y-1/2 h-[2px] bg-ink/30 transition-all duration-500 ease-in-out"
-                        style={{ 
+                        style={{
                           width: isVisible ? '100%' : '0%',
-                          transitionDelay: `${i * 150}ms` 
+                          transitionDelay: `${i * 150}ms`
                         }}
                       ></span>
                     </span>
@@ -90,7 +91,7 @@ export default function ProblemSection() {
                 <li>Support</li>
               </ul>
             </div>
-            
+
             <div className="mt-16 pt-8 border-t border-border/50">
               <p className="text-[40px] font-outfit tracking-tight text-ink">Handled.</p>
             </div>
