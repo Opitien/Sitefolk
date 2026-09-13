@@ -122,7 +122,7 @@ export default function WebsiteShowcase() {
       category: "VISUAL & PREMIUM BRANDS",
       title: "Fashion / luxury / real estate / visual brands.",
       goal: "Bookings or enquiries.",
-      image: "/ateliernoir_demo.jpg",
+      image: "/atelier_demo.jpg",
       domain: "ateliernoir.co.uk",
       demoUrl: "/demos/atelier-noir",
     },
