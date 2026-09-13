@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden pt-16 md:pt-20">
+    <main className="min-h-screen overflow-x-hidden pt-[100px] md:pt-[116px]">
       <SitefolkNav />
 
       <div className="max-w-[800px] mx-auto px-6 md:px-10 py-20 md:py-28">
@@ -183,8 +183,8 @@ export default function TermsPage() {
 
           <p className="text-[15px] text-ink-light">
             If you have any questions about these Terms, please contact us at{" "}
-            <a href="mailto:you@sitefolk.uk" className="text-ink underline underline-offset-2">
-              you@sitefolk.uk
+            <a href="mailto:hello@sitefolk.uk" className="text-ink underline underline-offset-2">
+              hello@sitefolk.uk
             </a>
             .
           </p>

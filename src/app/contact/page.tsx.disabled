@@ -151,8 +151,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Email</p>
-                    <a href="mailto:you@sitefolk.uk" className="text-[17px] text-ink-light hover:text-ink transition-colors">
-                      you@sitefolk.uk
+                    <a href="mailto:hello@sitefolk.uk" className="text-[17px] text-ink-light hover:text-ink transition-colors">
+                      hello@sitefolk.uk
                     </a>
                     <p className="text-[14px] text-ink-light mt-1">Reply within 1 business day</p>
                   </div>

@@ -13,7 +13,7 @@ import SitefolkFooter from "@/components/SitefolkFooter";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-hidden pt-16 md:pt-20">
+    <main className="min-h-screen overflow-x-hidden pt-[100px] md:pt-[116px]">
       <SitefolkNav />
       <SitefolkHero />
       <ProblemSection />

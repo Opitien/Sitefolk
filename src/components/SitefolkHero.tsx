@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function SitefolkHero() {
   return (
-    <section className="pt-32 pb-20 md:pt-20 md:pb-32 px-6 md:px-10 max-w-[1280px] mx-auto">
+    <section className="pt-10 pb-20 md:pt-20 md:pb-32 px-6 md:px-10 max-w-[1280px] mx-auto">
       <div className="flex flex-col items-center text-center">
         {/* Text Content */}
         <div className="max-w-4xl mx-auto animate-fade-in-up stagger-1 mb-16">
-          <h1 className="text-[55px] md:text-[80px] lg:text-[96px] leading-[1.05] tracking-tight mb-8">
+          <h1 className="text-[50px] md:text-[80px] lg:text-[96px] leading-[1.05] tracking-tight mb-8">
             Websites &amp; Ads<br />
             for UK Trades.
           </h1>

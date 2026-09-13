@@ -225,7 +225,7 @@ export default function PricingSection() {
               </p>
 
               <ul className="space-y-5 text-[17px] text-ink mb-12">
-                {["5-page Website - Mobile + Fast", "Booking/Contact Form + Call Now Button", "Hosting, Security, Backups, Updates", "Google Business Profile Setup", "5 Content Updates/month", "Cancel Anytime"].map((f) => (
+                {["5-page Website - Mobile + Fast", "Booking/Contact Form + Call Now Button", "Hosting, Security, Backups, Updates", "Google Business Profile Setup", "5 changes to your website/month", "Cancel Anytime"].map((f) => (
                   < li key={f} className="flex gap-3" > <span className="text-accent">✓</span>{f}</li>
                 ))}
               </ul>
@@ -271,7 +271,7 @@ export default function PricingSection() {
               </p>
 
               <ul className="space-y-5 text-[17px] text-white mb-12">
-                {["Everthing in Essential", "Google Ads management included", "Google Reviews Widget", "Monthly Report: Traffic, Leads, Rankings", "10 Updates/month + 1 Blog Post", "Priority support - 24hr fixes"].map((f) => (
+                {["Everything in Essential", "Google Ads management included", "Google Reviews Widget", "Monthly Report: website visits, enquiries, Rankings", "10 Updates/month + 1 Blog Post", "Priority support - 24hr fixes"].map((f) => (
                   <li key={f} className="flex gap-3"><span className="text-accent">✓</span>{f}</li>
                 ))}
               </ul>

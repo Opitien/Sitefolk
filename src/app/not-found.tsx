@@ -4,7 +4,7 @@ import SitefolkFooter from "@/components/SitefolkFooter";
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen overflow-x-hidden pt-16 md:pt-20 flex flex-col">
+    <main className="min-h-screen overflow-x-hidden pt-[100px] md:pt-[116px] flex flex-col">
       <SitefolkNav />
       <div className="flex-1 flex items-center justify-center py-20 px-6 min-h-[60vh]">
         <div className="text-center animate-fade-in-up">

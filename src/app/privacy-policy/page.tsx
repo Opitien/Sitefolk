@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden pt-16 md:pt-20">
+    <main className="min-h-screen overflow-x-hidden pt-[100px] md:pt-[116px]">
       <SitefolkNav />
 
       <div className="max-w-[800px] mx-auto px-6 md:px-10 py-20 md:py-28">
@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <p className="text-[17px] text-ink-light leading-relaxed">
               <strong className="text-ink">Website:</strong> sitefolk.uk<br />
-              <strong className="text-ink">Email:</strong> you@sitefolk.uk<br />
+              <strong className="text-ink">Email:</strong> hello@sitefolk.uk<br />
               <strong className="text-ink">Phone:</strong> 020 XXXX XXXX<br />
               <strong className="text-ink">Address:</strong> 71–75 Shelton Street, Covent Garden, London WC2H 9JQ, UK
             </p>
@@ -159,7 +159,7 @@ export default function PrivacyPolicyPage() {
               <li className="flex gap-3"><span className="text-ink font-semibold">Objection</span> — Object to processing based on legitimate interests.</li>
               <li className="flex gap-3"><span className="text-ink font-semibold">Portability</span> — Request your data in a structured, machine-readable format.</li>
             </ul>
-            <p className="text-[17px] text-ink-light leading-relaxed mt-6">To exercise any of these rights, please email us at <a href="mailto:you@sitefolk.uk" className="text-ink underline underline-offset-2">you@sitefolk.uk</a>. We will respond within 30 days.</p>
+            <p className="text-[17px] text-ink-light leading-relaxed mt-6">To exercise any of these rights, please email us at <a href="mailto:hello@sitefolk.uk" className="text-ink underline underline-offset-2">hello@sitefolk.uk</a>. We will respond within 30 days.</p>
           </section>
 
           <hr className="border-border my-10" />
@@ -177,7 +177,7 @@ export default function PrivacyPolicyPage() {
           {/* 9. ICO Complaints */}
           <section className="mb-12">
             <h2 className="text-[28px] font-semibold mb-4">9. How to Make a Complaint</h2>
-            <p className="text-[17px] text-ink-light leading-relaxed mb-4">If you are unhappy with how we have handled your personal data, please contact us first at <a href="mailto:you@sitefolk.uk" className="text-ink underline underline-offset-2">you@sitefolk.uk</a> and we will do our best to resolve your concern.</p>
+            <p className="text-[17px] text-ink-light leading-relaxed mb-4">If you are unhappy with how we have handled your personal data, please contact us first at <a href="mailto:hello@sitefolk.uk" className="text-ink underline underline-offset-2">hello@sitefolk.uk</a> and we will do our best to resolve your concern.</p>
             <p className="text-[17px] text-ink-light leading-relaxed">If you remain unsatisfied, you have the right to lodge a complaint with the <strong className="text-ink">Information Commissioner&apos;s Office (ICO)</strong>, the UK&apos;s data protection regulator:</p>
             <div className="mt-4 border border-border p-5 rounded-sm">
               <p className="text-[16px] text-ink-light">ICO website: <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-ink underline underline-offset-2">ico.org.uk</a><br />ICO helpline: 0303 123 1113</p>
