@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
         source: "/demos/atelier-noir",
         destination: "/demos/atelier-noir/index.html",
       },
+      {
+        source: "/demos/harrow-vale",
+        destination: "/demos/harrow-vale/index.html",
+      },
     ];
   },
 };

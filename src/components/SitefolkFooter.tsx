@@ -40,7 +40,6 @@ export default function SitefolkFooter() {
                 { href: "/privacy-policy", label: "Privacy Policy" },
                 { href: "/terms", label: "Terms of Service" },
                 { href: "/cookies", label: "Cookie Policy" },
-                { href: "/contact", label: "Contact Us" },
               ].map((link) => (
                 <a
                   key={link.label}

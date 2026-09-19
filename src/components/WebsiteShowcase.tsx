@@ -120,11 +120,11 @@ export default function WebsiteShowcase() {
     {
       id: "03",
       category: "VISUAL & PREMIUM BRANDS",
-      title: "Fashion / luxury / real estate / visual brands.",
-      goal: "Bookings or enquiries.",
-      image: "/atelier_demo.jpg",
-      domain: "ateliernoir.co.uk",
-      demoUrl: "/demos/atelier-noir",
+      title: "Real estate / premium property / visual brands.",
+      goal: "Bookings or valuations.",
+      image: "/harrow_demo.jpg",
+      domain: "harrowvaleestates.co.uk",
+      demoUrl: "/demos/harrow-vale",
     },
   ];
 
