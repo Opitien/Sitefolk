@@ -8,16 +8,16 @@ const nextConfig: NextConfig = {
         destination: "/demos/apex-plumbing/index.html",
       },
       {
-        source: "/demos/northfield-advisory",
-        destination: "/demos/northfield-advisory/index.html",
+        source: "/demos/spark-electrical",
+        destination: "/demos/spark-electrical/index.html",
       },
       {
         source: "/demos/atelier-noir",
         destination: "/demos/atelier-noir/index.html",
       },
       {
-        source: "/demos/harrow-vale",
-        destination: "/demos/harrow-vale/index.html",
+        source: "/demos/oakwood-builders",
+        destination: "/demos/oakwood-builders/index.html",
       },
     ];
   },

@@ -55,19 +55,11 @@ function ShowcaseItem({ showcase }: { showcase: any }) {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-border pb-6">
-        <div>
-          <span className="block text-[14px] font-semibold text-ink-light mb-2">
-            {showcase.id} — {showcase.category}
-          </span>
-          <h3 className="text-[24px] text-ink">{showcase.title}</h3>
-        </div>
-        <div className="text-left md:text-right">
-          <span className="block text-[13px] font-semibold text-ink-light uppercase mb-1">
-            Goal
-          </span>
-          <p className="text-[17px] text-ink">{showcase.goal}</p>
-        </div>
+      <div className="border-b border-border pb-6">
+        <span className="block text-[13px] font-semibold tracking-[0.08em] uppercase text-accent mb-2">
+          {showcase.niche}
+        </span>
+        <h3 className="text-[24px] text-ink">{showcase.title}</h3>
       </div>
 
       {/* Browser mockup wrapper */}
@@ -100,31 +92,25 @@ function ShowcaseItem({ showcase }: { showcase: any }) {
 export default function WebsiteShowcase() {
   const showcases = [
     {
-      id: "01",
-      category: "LOCAL SERVICES",
-      title: "Trades / local services / conversion.",
-      goal: "Generate quote requests.",
+      niche: "Sitefolk for Plumbers",
+      title: "Local plumbing businesses that need more calls, not more admin.",
       image: "/apex_demo.jpg",
       domain: "apexplumbing.co.uk",
       demoUrl: "/demos/apex-plumbing",
     },
     {
-      id: "02",
-      category: "PROFESSIONAL SERVICES",
-      title: "Professional services / corporate / trust.",
-      goal: "Generate enquiries.",
-      image: "/north_demo.jpg",
-      domain: "northfieldadvisory.co.uk",
-      demoUrl: "/demos/northfield-advisory",
+      niche: "Sitefolk for Electricians",
+      title: "Electrical contractors who want to be found first on Google.",
+      image: "/spark_demo.jpg",
+      domain: "sparkelectrical.co.uk",
+      demoUrl: "/demos/spark-electrical",
     },
     {
-      id: "03",
-      category: "VISUAL & PREMIUM BRANDS",
-      title: "Real estate / premium property / visual brands.",
-      goal: "Bookings or valuations.",
-      image: "/harrow_demo.jpg",
-      domain: "harrowvaleestates.co.uk",
-      demoUrl: "/demos/harrow-vale",
+      niche: "Sitefolk for Builders",
+      title: "Building firms and general contractors that want quality leads online.",
+      image: "/oakwood_demo.jpg",
+      domain: "oakwoodbuilders.co.uk",
+      demoUrl: "/demos/oakwood-builders",
     },
   ];
 

@@ -4,7 +4,7 @@ import SitefolkFooter from "@/components/SitefolkFooter";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Sitefolk",
-  description: "How Sitefolk collects, uses and protects your personal data under UK GDPR.",
+  description: "How Sitefolk — the website and Google Ads platform for UK tradespeople — collects, uses and protects your personal data under UK GDPR.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
           <section className="mb-12">
             <h2 className="text-[28px] font-semibold mb-4">1. Who We Are</h2>
             <p className="text-[17px] text-ink-light leading-relaxed mb-4">
-              Sitefolk Ltd (&quot;Sitefolk&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is a website design and Google Ads agency based in London, UK. We build and manage websites and run paid advertising campaigns for UK trade businesses.
+              Sitefolk Ltd (&quot;Sitefolk&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is a managed online presence subscription service based in London, UK. We provide UK tradespeople with a fully managed website, hosting, maintenance and digital presence — all handled for one flat monthly fee.
             </p>
             <p className="text-[17px] text-ink-light leading-relaxed">
               <strong className="text-ink">Website:</strong> sitefolk.uk<br />

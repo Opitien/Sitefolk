@@ -16,12 +16,12 @@
     --nf-text-primary:  #1d2630;
     --nf-text-secondary:#5a646e;
     
-    --nf-navy:          #0e1b29;
-    --nf-navy-light:    #15283c;
+    --nf-navy:          #005bb5;
+    --nf-navy-light:    #0074e4;
     
-    --nf-accent:        #376e5d;
-    --nf-accent-dark:   #2b574a;
-    --nf-accent-light:  #e7f2ed;
+    --nf-accent:        #eab308;
+    --nf-accent-dark:   #ca8a04;
+    --nf-accent-light:  #fef3c7;
 
     /* Typography */
     --nf-font-sans:     'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

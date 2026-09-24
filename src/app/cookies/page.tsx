@@ -4,7 +4,7 @@ import SitefolkFooter from "@/components/SitefolkFooter";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | Sitefolk",
-  description: "How Sitefolk uses cookies on sitefolk.uk, including Google Analytics and Google Ads.",
+  description: "How Sitefolk — the website and Google Ads platform for UK tradespeople — uses cookies on sitefolk.uk.",
 };
 
 export default function CookiesPage() {

@@ -4,7 +4,7 @@ import SitefolkFooter from "@/components/SitefolkFooter";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Sitefolk",
-  description: "Terms of Service for Sitefolk website design and Google Ads services.",
+  description: "Terms of Service for Sitefolk — the managed online presence subscription for UK tradespeople.",
 };
 
 export default function TermsPage() {
@@ -28,27 +28,27 @@ export default function TermsPage() {
 
         <div>
           <p className="text-[17px] text-ink-light leading-relaxed mb-10">
-            These Terms of Service (&quot;Terms&quot;) govern the relationship between Sitefolk Ltd (&quot;Sitefolk&quot;, &quot;we&quot;, &quot;us&quot;) and you (&quot;Client&quot;, &quot;you&quot;) when you engage us for website design, build or Google Ads management services. By proceeding with our services, you agree to these Terms.
+            These Terms of Service (&quot;Terms&quot;) govern the relationship between Sitefolk Ltd (&quot;Sitefolk&quot;, &quot;we&quot;, &quot;us&quot;) and you (&quot;Client&quot;, &quot;you&quot;) when you subscribe to our managed online presence service. By proceeding with our services, you agree to these Terms.
           </p>
 
           {/* 1. Services */}
           <section className="mb-12">
             <h2 className="text-[28px] font-semibold mb-4">1. Services</h2>
             <p className="text-[17px] text-ink-light leading-relaxed mb-4">
-              Sitefolk provides the following services to UK trade businesses:
+              Sitefolk provides a managed online presence subscription to UK trade businesses, which includes:
             </p>
             <div className="space-y-4">
               <div className="border border-border p-5 rounded-sm">
-                <h3 className="font-semibold mb-1">Website Setup</h3>
-                <p className="text-[16px] text-ink-light">A one-off fee of <strong className="text-ink">£600</strong> covers the design, build and launch of your business website, including hosting setup and initial content.</p>
+                <h3 className="font-semibold mb-1">One-Time Activation Fee</h3>
+                <p className="text-[16px] text-ink-light">A one-off activation fee of <strong className="text-ink">£200</strong> covers the design, build and launch of your business website, domain configuration, hosting setup and initial content. This fee is due before work begins and is non-refundable once work has commenced.</p>
               </div>
               <div className="border border-border p-5 rounded-sm">
-                <h3 className="font-semibold mb-1">Ongoing Management</h3>
-                <p className="text-[16px] text-ink-light"><strong className="text-ink">£200 per month</strong> covers ongoing website management, maintenance, updates and Google Ads campaign management.</p>
+                <h3 className="font-semibold mb-1">Monthly Subscription — Essential</h3>
+                <p className="text-[16px] text-ink-light"><strong className="text-ink">£119 per month</strong> (billed from your second month) covers your ongoing managed online presence: website hosting, security, backups, software updates, Google Business Profile management, and up to 5 website changes per month.</p>
               </div>
             </div>
             <p className="text-[17px] text-ink-light leading-relaxed mt-6">
-              The exact scope of each engagement will be confirmed in writing before work commences. Any work outside the agreed scope will be quoted separately and requires written approval before proceeding.
+              The exact scope of each plan will be confirmed in writing before work commences. Any work outside the agreed scope will be quoted separately and requires written approval before proceeding.
             </p>
           </section>
 
