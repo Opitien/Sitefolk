@@ -44,9 +44,13 @@ function ShowcaseItem({ showcase }: { showcase: any }) {
           fill
           className="object-cover object-top"
         />
-        {showcase.demoUrl && (
+        {showcase.demoUrl ? (
           <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/10 transition-colors z-30 flex items-center justify-center">
             <span className="opacity-0 group-hover:opacity-100 bg-white text-ink px-6 py-3 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Demo</span>
+          </div>
+        ) : showcase.comingSoon && (
+          <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/10 transition-colors z-30 flex items-center justify-center">
+            <span className="opacity-0 group-hover:opacity-100 bg-white text-ink px-6 py-3 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Demo Coming Soon</span>
           </div>
         )}
       </div>
@@ -79,7 +83,7 @@ function ShowcaseItem({ showcase }: { showcase: any }) {
       ) : (
         <div
           ref={itemRef}
-          className={`bg-cream-dark rounded-xl shadow-xl border border-border/50 overflow-hidden ${isVisible ? "animate-elegant-reveal" : "opacity-0"
+          className={`group bg-cream-dark rounded-xl shadow-xl border border-border/50 overflow-hidden ${isVisible ? "animate-elegant-reveal" : "opacity-0"
             }`}
         >
           {mockupContent}
@@ -103,14 +107,16 @@ export default function WebsiteShowcase() {
       title: "Electrical contractors who want to be found first on Google.",
       image: "/spark_demo.jpg",
       domain: "sparkelectrical.co.uk",
-      demoUrl: "/demos/spark-electrical",
+      demoUrl: "",
+      comingSoon: true,
     },
     {
       niche: "Sitefolk for Builders",
       title: "Building firms and general contractors that want quality leads online.",
       image: "/oakwood_demo.jpg",
       domain: "oakwoodbuilders.co.uk",
-      demoUrl: "/demos/oakwood-builders",
+      demoUrl: "",
+      comingSoon: true,
     },
   ];
 
@@ -127,7 +133,7 @@ export default function WebsiteShowcase() {
 
         <div className="space-y-32">
           {showcases.map((showcase) => (
-            <ShowcaseItem key={showcase.id} showcase={showcase} />
+            <ShowcaseItem key={showcase.domain} showcase={showcase} />
           ))}
         </div>
 
