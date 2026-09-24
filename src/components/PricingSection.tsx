@@ -213,8 +213,7 @@ export default function PricingSection() {
 
             <div className="p-10 md:p-14">
               <h3 className="text-[24px] font-outfit font-medium mb-2 text-ink">ESSENTIAL</h3>
-              <p className="text-[15px] text-ink-light mb-12">£200 one-time activation</p>
-
+              <p className="text-[15px] text-ink-light mb-12">£299 one-time setup</p>
               <div className="mb-3">
                 <span className="text-[64px] font-outfit font-medium tracking-tight text-ink">£119</span>
                 <span className="text-[19px] text-ink-light">/month</span>

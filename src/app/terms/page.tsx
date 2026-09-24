@@ -39,8 +39,8 @@ export default function TermsPage() {
             </p>
             <div className="space-y-4">
               <div className="border border-border p-5 rounded-sm">
-                <h3 className="font-semibold mb-1">One-Time Activation Fee</h3>
-                <p className="text-[16px] text-ink-light">A one-off activation fee of <strong className="text-ink">£200</strong> covers the design, build and launch of your business website, domain configuration, hosting setup and initial content. This fee is due before work begins and is non-refundable once work has commenced.</p>
+                <h3 className="font-semibold mb-1">One-Time Setup Fee</h3>
+                <p className="text-[16px] text-ink-light">A one-off setup fee of <strong className="text-ink">£299</strong> covers the design, build and launch of your business website, domain configuration, hosting setup and initial content. This fee is due before work begins and is non-refundable once work has commenced.</p>
               </div>
               <div className="border border-border p-5 rounded-sm">
                 <h3 className="font-semibold mb-1">Monthly Subscription — Essential</h3>
