@@ -213,19 +213,21 @@ export default function PricingSection() {
 
             <div className="p-10 md:p-14">
               <h3 className="text-[24px] font-outfit font-medium mb-2 text-ink">ESSENTIAL</h3>
-              <p className="text-[15px] text-ink-light mb-12">£299 one-time setup</p>
-              <div className="mb-3">
+              <p className="text-[15px] text-ink-light mb-12">£299 one-time setup fee</p>
+              <span className="inline-block mb-4 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider border border-accent text-accent rounded-full">
+                Founding client rate — limited spots
+              </span>
+              <div className="mb-9">
                 <span className="text-[64px] font-outfit font-medium tracking-tight text-ink">£119</span>
                 <span className="text-[19px] text-ink-light">/month</span>
               </div>
-              <p className="text-[13px] text-ink/50 mb-9">from your 2nd month</p>
 
               <p className="text-[17px] text-ink mb-10 pb-10 border-b border-border leading-relaxed">
-                Best for: UK tradespeople who want to be found online — without hiring an agency or touching a single line of code.
+                Best for: UK tradespeople who want to be found online — without hiring an agency.
               </p>
 
               <ul className="space-y-5 text-[17px] text-ink mb-12">
-                {["5-page Website - Mobile + Fast", "Booking/Contact Form + Call Now Button", "Hosting, Security, Backups, Updates", "Google Business Profile Setup", "5 changes to your website/month", "Cancel Anytime"].map((f) => (
+                {["5-page website — mobile-optimised and fast", "Booking/contact form + call now button", "Hosting, security, backups, updates", "Google Business Profile setup", "5 changes to your website/month", "Cancel anytime"].map((f) => (
                   < li key={f} className="flex gap-3" > <span className="text-accent">✓</span>{f}</li>
                 ))}
               </ul>
@@ -243,37 +245,45 @@ export default function PricingSection() {
 
           {/* Pro Plan */}
           <div className="border border-ink flex flex-col justify-between bg-ink relative shadow-2xl">
-            <div className="absolute top-0 right-10 -translate-y-1/2 bg-white/20 text-white/80 px-4 py-1.5 text-[12px] font-semibold tracking-wider uppercase rounded-full z-20 backdrop-blur-sm border border-white/20">
-              Coming Soon
+            {/* Form overlay */}
+            <div
+              className={`absolute inset-4 bg-ink z-10 transition-all duration-500 ease-in-out flex flex-col justify-center ${openForm === "Pro"
+                ? "opacity-100 translate-y-0 pointer-events-auto"
+                : "opacity-0 translate-y-4 pointer-events-none"
+                }`}
+            >
+              <QuoteForm plan="Pro" dark={true} onClose={() => setOpenForm(null)} />
             </div>
-
-            {/* Coming soon overlay — soft dim on the card body */}
-            <div className="absolute inset-0 rounded-sm bg-ink/40 backdrop-blur-[2px] z-10 pointer-events-none" />
 
             <div className="p-10 md:p-14">
               <h3 className="text-[24px] font-outfit font-medium mb-2 text-white">PRO</h3>
-              <p className="text-[15px] text-ink-light mb-12">Activation fee TBC</p>
-
-              <div className="mb-12">
-                <span className="text-[64px] font-outfit font-medium tracking-tight text-white">£TBC</span>
-                <span className="text-[19px] text-ink-light">/month</span>
+              <p className="text-[15px] text-white/50 mb-12">£499 one-time setup fee</p>
+              <span className="inline-block mb-4 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider border border-accent text-accent rounded-full">
+                Founding client rate — limited spots
+              </span>
+              <div className="mb-9">
+                <span className="text-[64px] font-outfit font-medium tracking-tight text-white">£249</span>
+                <span className="text-[19px] text-white/50">/month</span>
               </div>
 
-              <p className="text-[17px] text-white mb-10 pb-10 border-b border-ink-light/30 leading-relaxed">
+              <p className="text-[17px] text-white mb-10 pb-10 border-b border-white/10 leading-relaxed">
                 Best for: Trade businesses ready to grow — with Google Ads management built in.
               </p>
 
               <ul className="space-y-5 text-[17px] text-white mb-12">
-                {["Everything in Essential", "Google Ads management included", "Google Reviews Widget", "Monthly Report: website visits, enquiries, Rankings", "10 Updates/month + 1 Blog Post", "Priority support - 24hr fixes"].map((f) => (
+                {["Everything in Essential", "Google Ads management included", "Google Reviews widget", "Monthly report: website visits, enquiries, rankings", "10 updates/month + 1 blog post", "Priority support — 24hr fixes"].map((f) => (
                   <li key={f} className="flex gap-3"><span className="text-accent">✓</span>{f}</li>
                 ))}
               </ul>
             </div>
 
-            <div className="px-10 pb-10 md:px-14 md:pb-14 relative z-20">
-              <div className="w-full text-center py-4 border border-white/20 text-white/50 text-[17px] font-medium cursor-not-allowed select-none">
-                Coming soon
-              </div>
+            <div className="px-10 pb-10 md:px-14 md:pb-14">
+              <button
+                onClick={() => setOpenForm("Pro")}
+                className="block w-full text-center py-4 bg-white text-ink font-medium hover:bg-cream-dark transition-colors text-[17px]"
+              >
+                Get started →
+              </button>
             </div>
           </div>
 

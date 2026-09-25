@@ -44,7 +44,7 @@ export default function TermsPage() {
               </div>
               <div className="border border-border p-5 rounded-sm">
                 <h3 className="font-semibold mb-1">Monthly Subscription — Essential</h3>
-                <p className="text-[16px] text-ink-light"><strong className="text-ink">£119 per month</strong> (billed from your second month) covers your ongoing managed online presence: website hosting, security, backups, software updates, Google Business Profile management, and up to 5 website changes per month.</p>
+                <p className="text-[16px] text-ink-light"><strong className="text-ink">£119 per month</strong> covers your ongoing managed online presence: website hosting, security, backups, software updates, Google Business Profile management, and up to 5 website changes per month.</p>
               </div>
             </div>
             <p className="text-[17px] text-ink-light leading-relaxed mt-6">

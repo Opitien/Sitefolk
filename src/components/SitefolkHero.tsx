@@ -28,7 +28,7 @@ export default function SitefolkHero() {
             </h1>
 
             <p className="text-[19px] md:text-[22px] text-ink-light leading-relaxed mb-10 max-w-2xl mx-auto">
-              Bespoke web design and Google Ads campaigns that generate real enquiries for your business. Built, hosted, and managed for one simple monthly price.
+              Bespoke web design and Google Ads campaigns that generate real enquiries for your business.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
